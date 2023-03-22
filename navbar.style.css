@@ -1,6 +1,5 @@
 .navbar {
     place-items: center;
-    place-items: center;
     height: 43px;
 }
 
@@ -10,37 +9,49 @@
     }
 }
 
-.navbar .navbar-nav .nav-item {
-    display: flex;
+ .navbar-nav .nav-item {
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
     cursor: pointer;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-nav .nav-item .nav-link {
     color: rgb(110, 110, 110);
     transition: 0.5s ease;
     font-weight: lighter;
-    align-items: end;
-    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    margin: 10px;
+    display: table-cell;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 15px;
+    letter-spacing: 2px;
 }
 
-.navbar-nav .nav-item .nav-link.active {
+ul li a.active {
     color: #3a8a58;
     text-decoration: none;
     border-image: linear-gradient(to right, #19994a,#19994a, #19994a,  #19994a, #aa3e3a, #aa3e3a, #aa3e3a) 10;
-    border-width: 100%;
-    border-bottom: 2px solid;
-    font-weight: 400;
-    bottom:0;
+    border-top: 2px solid;
+    display: table-cell;
+    position: relative;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    font-weight: lighter;
+    padding: 9px 8px;
     text-shadow: 3px 3px 5px rgb(224, 224, 224);
-    border-radius: 2px;
-    transition: 0.5s ease;
+    letter-spacing: 2px;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: #368f58;
+    color: hsl(143, 33%, 44%);
     transition: .1s ease;
-    border-image: linear-gradient(to right, #19994a,#19994a, #19994a,  #19994a, #aa3e3a, #aa3e3a, #aa3e3a) 10;
-    border-width: 100%;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid green;
+    font-weight: 200px;
 }
