@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalinga</title>
+    <link rel="stylesheet" href="navbar.style.css">
+    <link rel="stylesheet" href="carousel.style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg shadow-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+            <span class="text-primary fw-bold">logo</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarsupportcontent" aria-controls="navbarsupportcontent" aria-expanded="false" aria-label="toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarsupportcontent">
+                    <ul class="navbar-nav ms-auto my-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-1" href="header.blade.html"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active me-lg-1" href="carousel_file.blade.html"><b>About</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-1" href="sample2.html"><b>Courses</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-1" href="sample3.html"><b>Teams</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-1" href="#milestone"><b>Milestones</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-1" href="#testimonials"><b>Testimonials</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-1" href="#contact"><b>Reach Us</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+     <!--===============================Carousel==============================-->
+
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(image2.jpg);" data-bs-interval="5000">
+            <div class="carousel-content" id="carcontent1">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold"><span class="text-primary text-uppercase fw-bold">road mishaps</span> has no age limit</h6>
+                        <h2 class="text-uppcase fw-bold display-4 text-white">Be a responsible <span class="text-primary fw-bold text-uppercase"> driver</span></h2>
+                        <a href="#about" class="btn btn-primary btn-sm fw-bold text-uppercase mt-2 mb-2">get started</a>
+                        <a href="signup.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Join our Community</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(Image1.jpg)" data-bs-interval="5000">
+            <div class="carousel-content text-end" id="carcontent2">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold">What everyone think about</h6>
+                        <h2 class="display-4 text-white fw-bold"> The <span class="text-primary fw-bold">Road</span><i class="text-white fw-bold">/vise.</i> course</h2>
+                        <a href="#courses" class="btn btn-primary btn-sm fw-bold mt-2 mb-2">View Courses</a>
+                        <a href="community.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Ask the <b>Road</b><i>/vise.</i> community</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(trafficsign2.jpg)" data-bs-interval="5000">
+            <div class="carousel-content text-end" id="carcontent3">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold">How important are</h6>
+                        <h2 class="display-4 text-white fw-bold"><span class="text-primary fw-bold">Traffic</span> rules</h2>
+                        <a href="#courses" class="btn btn-primary btn-sm fw-bold mt-2 mb-2">View Courses</a>
+                        <a href="community.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Ask the <b>Road</b><i>/vise.</i> community</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(speeding1.jpg)" data-bs-interval="5000">
+            <div class="carousel-content text-end" id="carcontent4">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold">Thinking about speeding? What about</h6>
+                        <h2 class="display-4 text-white fw-bold">Your<span class="text-primary fw-bold"> Family</span></h2>
+                        <a href="#courses" class="btn btn-primary btn-sm fw-bold mt-2 mb-2">View Courses</a>
+                        <a href="signup.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Join our Community</a>
+                    </div>
+                </div>
+            </div>
+          </div><div class="carousel-item bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(bikeaccident.jpg)" data-bs-interval="5000">
+            <div class="carousel-content" id="carcontent1">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold">Keep a low speed when driving in the city</h6>
+                        <h2 class="display-4 text-white fw-bold">Especially at<span class="text-primary fw-bold"> Night</span></h2>
+                        <a href="#courses" class="btn btn-primary btn-sm fw-bold mt-2 mb-2">View Courses</a>
+                        <a href="signup.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Join our Community</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(yield.jpg)" data-bs-interval="5000">
+            <div class="carousel-content" id="carcontent5">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold">Be a defensive driver</h6>
+                        <h2 class="display-4 text-white fw-bold text-uppercase">Yield <span class="text-primary fw-bold">Pedestrians</span></h2>
+                        <a href="#courses" class="btn btn-primary btn-sm fw-bold mt-2 mb-2">View Courses</a>
+                        <a href="signup.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Join our Community</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(motogear.jpg)" data-bs-interval="5000">
+            <div class="carousel-content" id="carcontent6">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold">The anatomy of a </h6>
+                        <h2 class="display-4 text-white fw-bold"> Safety<span class="text-primary fw-bold"> Gear</span></h2>
+                        <a href="#courses" class="btn btn-primary btn-sm fw-bold mt-2 mb-2">View Courses</a>
+                        <a href="community.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Ask the <b>Road</b><i>/vise.</i> community</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(caraccident.jpg)" data-bs-interval="5000">
+            <div class="carousel-content" id="carcontent7">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold">Your family is waiting at home</h6>
+                        <h2 class="display-4 text-white fw-bold">Please Drive<span class="text-primary fw-bold"> Safely</span></h2>
+                        <a href="#courses" class="btn btn-primary btn-sm fw-bold mt-2 mb-2">View Courses</a>
+                        <a href="signup.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Join our Community</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--===============================End of Carousel==============================-->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="navbar.header.js"></script>
+    
+</body>
+</html>
