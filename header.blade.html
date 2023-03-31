@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalinga</title>
     <link rel="stylesheet" href="navbar.style.css">
+    <link rel="stylesheet" href="join_us.style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Country selector -->
+    <link rel="stylesheet" href="./country-select-js-master/build/css/countrySelect.css">
+    <!-- End of Country Selector -->
 </head>
 <body>
 
@@ -45,11 +50,419 @@
         </div>
     </nav>
 
+    <!-- ======================== Form ============================ -->
+
+    <!-- ============ Join Banner ============== -->
+
+    <section class="section_banner bg-light py-5 ">
+        <div class="join_us_banner">
+            <img src="./images/join_us_banner.jpg" alt="Join Us">
+            <div class="join_overlay_banner">
+                
+                <div class="container">
+                    <h1 class="display-5">Join Us</h1>
+                    <p class="lead fs-4">We are one big family here at Kalinga</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= End of Join Banner =============== -->
+
+    <section class="join_form">
+
+
+        <div class="container-fluid">
+
+
+            
+            <div class="row d-flex align-items-center justify-content-center mt-4">
     
+                <div class="col-12 col-md-10 col-lg-9 col-xl-9 col-xxl-8 px-4">
+    
+                    <div class="card shadow-lg border-top border-success px-3" style="--bs-border-opacity: .3;">
+
+                        <div class="container mt-4">
+                            <h1 class="fs-3">Applicant Details</h1>
+                            <hr class="border-4 border-success ">
+                        </div>
+
+                        <form action="" class="needs-validation mt-3" novalidate>
+    
+                            <div class="container">
+        
+                                <div class="row">
+        
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-floating mb-3 mt-3">
+                                            <input type="text" class="form-control border-top-0 border-start-0 border-end-0 border-success border-2 rounded-0" id="firstname" placeholder="Enter first name here" name="firstname" required>
+                                            <label for="firstname" class="form-label fw-bold text-success">First Name</label>
+                                            <div class="valid-feedback"> Thank you </div>
+                                            <div class="invalid-feedback">Please enter first name</div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-floating mb-3 mt-3">
+                                            <input type="text" class="form-control border-top-0 border-start-0 border-end-0 border-success border-2 rounded-0" id="middlename" placeholder="Enter middle name here" name="middelname" required>
+                                            <label for="middlename" class="form-label fw-bold text-success">Full Middle Name</label>
+                                            <div class="valid-feedback"> Thank you </div>
+                                            <div class="invalid-feedback">Please enter middle name</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-floating mb-3 mt-3">
+                                            <input type="text" class="form-control border-top-0 border-start-0 border-end-0 border-success border-2 rounded-0" id="lastname" placeholder="Enter last name here" name="lastname" required>
+                                            <label for="lastname" class="form-label fw-bold text-success">Last Name</label>
+                                            <div class="valid-feedback"> Thank you </div>
+                                            <div class="invalid-feedback">Please enter last name</div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                                <div class="row">
+        
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-floating mb-3 mt-3">
+                                            <input type="text" class="form-control border-top-0 border-start-0 border-end-0 border-success border-2 rounded-0" id="suffix" placeholder="Enter middle name here" name="suffix">
+                                            <label for="suffix" class="form-label fw-bold text-success">Suffix (e.g. Jr., Sr., III, etc.)</label>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-floating mb-3 mt-3">
+                                            <input type="date" class="form-control border-top-0 border-start-0 border-end-0 border-success border-2 rounded-0" id="birthday" placeholder="Enter birthdate here" name="birthday" required>
+                                            <label for="birthday" class="form-label fw-bold text-success">Date of Birth</label>
+                                            <div class="valid-feedback"> Thank you </div>
+                                            <div class="invalid-feedback">Please enter date of birth</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-floating mb-3 mt-3">
+                                            <select class="form-control border-top-0 border-start-0 border-end-0 border-success border-2 rounded-0" id="gender" placeholder="Enter birthdate here" name="gender" required>
+                                                <option value="">----</option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                                <option value="transgender">Transgender</option>
+                                                <option value="non-binary/non-conforming">Non-binary/non-conforming</option>
+                                                <option value="not-listed">Not-listed</option>
+                                                <option value="prefer not to say">Prefer not to say</option>
+                                            </select>
+                                            <label for="gender" class="form-label fw-bold text-success">Gender</label>
+                                            <div class="valid-feedback"> Thank you </div>
+                                            <div class="invalid-feedback">Please choose gender here</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                
+
+                                <div class="row">
+        
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-floating mb-3 mt-3">
+                                            <input type="email" class="form-control border-top-0 border-start-0 border-end-0 border-success border-2 rounded-0" id="email" placeholder="Enter email here" name="email" required>
+                                            <label for="email" class="form-label fw-bold text-success">Email</label>
+                                            <div class="valid-feedback"> Email </div>
+                                            <div class="invalid-feedback">Please email here</div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-floating mb-3 mt-3">
+                                            <input type="number" class="form-control border-top-0 border-start-0 border-end-0 border-success border-2 rounded-0" id="cpnumber" placeholder="Enter cellphone number here" name="cpnumber" required>
+                                            <label for="cpnumber" class="form-label fw-bold text-success">Mobile Number</label>
+                                            <div class="valid-feedback"> Email </div>
+                                            <div class="invalid-feedback">Please enter mobile number here</div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+    
+                                <div class="form-floating mb-3 mt-3">
+                                    <textarea rows="10" class="form-control border-top-0 border-start-0 border-end-0 border-success border-2 rounded-0" id="address" placeholder="Enter address here" name="address" required></textarea>
+                                    <label for="lastname" class="form-label fw-bold text-success">Address</label>
+                                    <p class="text-success fw-bold">
+                                        (PLEASE FOLLOW THIS FORMAT: Unit/ Room No., Floor, Building Name, Lot #, Block #, Phase #, House #, Street Name, Subdivision, Barangay (If applicable), Municipality, Province) 
+                                    </p>
+                                    <div class="valid-feedback"> Thank you </div>
+                                    <div class="invalid-feedback">Please enter your address</div>
+                                </div>
+    
+                                <div class="row">
+        
+                                    <div class="col-12 col-md-6 d-flex align-items-center mt-4">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control border-top-0 border-start-0 border-end-0 border-success border-2 rounded-0" id="country" placeholder="Enter last name here" name="country" required>
+                                            <label for="country" class="form-label fw-bold text-success">Country:</label>
+                                            <div class="valid-feedback"> Thank you </div>
+                                            <div class="invalid-feedback">Please enter last name</div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-floating mb-3 mt-3">
+                                            <input type="text" class="form-control border-top-0 border-start-0 border-end-0 border-success border-2 rounded-0" id="refferal" placeholder="Are you reffered?" name="refferal">
+                                            <label for="refferal" class="form-label fw-bold text-success">Reffered By: (Optional)</label>
+                                        </div>
+                                    </div>
+        
+                                </div>
+
+                                <br>
+                                <br>
+                                <hr>
+                                <br>
+                                <br>
+
+                                <div class="container mt-4">
+                                    <h1 class="fs-4">Applicant Work Profile</h1>
+                                    <hr class="border-4 border-success ">
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-12 mb-5">
+
+                                        <div class="mb-3 mt-3 ">
+                                            <label for="educationalsummary" class="form-label fw-bold text-success mb-3 fs-5">Educational Background<hr class="text-success border-3 w-100"></label>
+                                            <textarea rows="2" class="form-control border-success border-2 rounded-3 mb-3" style="--bs-border-opacity: .3;" id="educationalsummary" placeholder="Enter your educational background summary here..." name="educationalsummary" required></textarea>
+                                          
+                                            <div class="valid-feedback mb-4"> Thank you </div>
+                                            <div class="invalid-feedback mb-4">Please enter your educational background here</div>
+                                              
+                                            <div class="container">
+                                                <p class="text-success">
+                                                    <b>(PLEASE FOLLOW THIS FORMAT:)</b>  
+                                                    <br>
+                                                    <b>School:</b> e.g. University of ABC
+                                                    <br>
+                                                    <b>Field of study:</b> e.g. healthcare (optional)
+                                                    <br>
+                                                    <b>Degree:</b> e.g. Bachelor of Science in Nursing (Optional)
+                                                    <br>
+                                                    <b>Start-date:</b> e.g. June 26, 2013 (optional)
+                                                    <br>
+                                                    <b>End-date:</b> e.g. March 27, 2017 (optional)
+                                                </p>
+                                            </div>
+                                            
+                                        </div>
+
+                                    </div>
+                                    
+
+                                    <div class="col-12 mb-5">
+
+                                        <div class="mb-3 mt-3 ">
+                                            <label for="workexperiencesummary" class="form-label fw-bold text-success mb-3 fs-5">Work Experience Summary<hr class="text-success border-3 w-100"></label>
+                                            
+                                            <textarea rows="2" class="form-control border-success border-2 rounded-3 mb-3" style="--bs-border-opacity: .3;" id="workexperiencesummary" placeholder="Enter your work experience summary here..." name="workexperiencesummary" required></textarea>
+                                            
+                                            <div class="valid-feedback mb-4"> Thank you </div>
+                                            <div class="invalid-feedback mb-4">Please enter your work expereince summary here</div>
+
+                                            <div class="container">
+                                                <p class="text-success">
+                                                    <b>(PLEASE FOLLOW THIS FORMAT:)</b>  
+                                                    <br>
+                                                    <b>Title:</b> e.g. Medtech II
+                                                    <br>
+                                                    <b>Company:</b> e.g. Southern Philippines Medical Center 
+                                                    <br>
+                                                    <b>Employment Status:</b> e.g. Job Order
+                                                    <br>
+                                                    <b>Brief Summary:</b> e.g. - Handled Histopathology Section , etc.
+                                                    <br>
+                                                    <b>Start-date:</b> e.g. June 26, 2013 (optional)
+                                                    <br>
+                                                    <b>End-date:</b> e.g. March 27, 2017 (optional)
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+        
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-floating mb-3 mt-3">
+                                            <select class="form-control border-top-0 border-start-0 border-end-0 border-success border-2 rounded-0" id="workexpyear" placeholder="select number of work experience here" name="workexpyear" required>
+                                                <option value="">Years of work related experience</option>
+                                                <option value="less_than_a_year">Less than a year</option>
+                                                <option value="1_year">1 year</option>
+                                                <option value="2_years">2 years</option>
+                                                <option value="3_years">3 years</option>
+                                                <option value="4_years">4 years</option>
+                                                <option value="5_years">5 years</option>
+                                                <option value="more_than_5_years">More than 5 years</option>
+                                                <option value="more_than_10_years">More than 10 years</option>
+                                            </select>
+                                            <label for="workexpyear" class="form-label fw-bold text-success">Years of Experience</label>
+                                            <div class="valid-feedback"> Thank you </div>
+                                            <div class="invalid-feedback">Please years of experience name</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-floating mb-3 mt-3">
+                                            <select class="form-control border-top-0 border-start-0 border-end-0 border-success border-2 rounded-0" id="employmentstatus" placeholder="Place employment status here" name="employmentstatus" required>
+                                                <option value="">Are you currently employed?</option>
+                                                <option value="employed">Yes</option>
+                                                <option value="not_employed">No</option>
+                                            </select>
+                                            <label for="employmentstatus" class="form-label fw-bold text-success">Employment status</label>
+                                            <div class="valid-feedback"> Thank you </div>
+                                            <div class="invalid-feedback">Please enter what's your current employment status</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-floating mb-3 mt-3">
+                                            <select class="form-control border-top-0 border-start-0 border-end-0 border-success border-2 rounded-0" id="educationattainment" placeholder="select educational attainment here" name="educationattainment" required>
+                                                <option value="">Select educational attainment</option>
+                                                <option value="undergrad">Undergraduate</option>
+                                                <option value="bachelor">Bachelor</option>
+                                                <option value="masters">Masters</option>
+                                                <option value="doctorate">Doctorate</option>
+                                                <option value="juris_doctor">Juris doctor</option>
+                                                <option value="vocational">Vocational</option>
+                                                <option value="associate_graduate">Associate graduate</option>
+                                                <option value="high_school_grad">High school graduate</option>
+                                            </select>
+                                            <label for="educationattainment" class="form-label fw-bold text-success">Degree</label>
+                                            <div class="valid-feedback"> Thank you </div>
+                                            <div class="invalid-feedback">Please enter last name</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <br>
+                                <br>
+                                <hr>
+                                <br>
+                                <br>
+
+                                <div class="container mt-4">
+                                    <h1 class="fs-4">Applicant Attachments</h1>
+                                    <hr class="border-4 border-success ">
+                                </div>
+
+                                <div class="form-floating mb-3 mt-3">
+                                    <textarea rows="10" class=" form-control border-top-0 border-start-0 border-end-0 rounded-0 border-success border-2" style="--bs-border-opacity: .3;" id="gdrivelinkattachment" placeholder="Enter Gdrive link here" name="gdrivelinkattachment" required></textarea>
+                                    <label for="gdrivelinkattachment" class="form-label fw-bold text-success">Paste your Google drive link of your requirements here </label>
+                                    <div class="valid-feedback"> Thank you </div>
+                                    <div class="invalid-feedback">Please paste Google drive link here for attachments and documents</div>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-12 col-md-4">
+                                        <div class=" mb-3 mt-3">
+                                            <label for="uploadresume" class="form-label fw-bold text-success">Upload your resume here </label>
+                                            <input type="file" class=" form-control rounded-5 border-success border-2" style="--bs-border-opacity: .3;" id="uploadresume" placeholder="Upload resume here" name="uploadresume" required>
+                                            <div class="valid-feedback"> Thank you </div>
+                                            <div class="invalid-feedback">Please upload your resume here</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-4">
+                                        <div class=" mb-3 mt-3">
+                                            <label for="uploadcoverletter" class="form-label fw-bold text-success">Upload your cover letter here </label>
+                                            <input type="file" class=" form-control rounded-5 border-success border-2" style="--bs-border-opacity: .3;" id="uploadcoverletter" placeholder="Upload cover letter here" name="uploadcoverletter" required>
+                                            <div class="valid-feedback"> Thank you </div>
+                                            <div class="invalid-feedback">Please upload your cover letter here</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-4">
+                                        <div class=" mb-3 mt-3">
+                                            <label for="uploadprofphoto" class="form-label fw-bold text-success">Upload your professional photo here </label>
+                                            <input type="file" class=" form-control rounded-5 border-success border-2" style="--bs-border-opacity: .3;" id="uploadprofphoto" placeholder="Enter Gdrive link here" name="uploadprofphoto" required>
+                                            <div class="valid-feedback"> Thank you </div>
+                                            <div class="invalid-feedback">Please upload your professional photo here</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+        
+                            </div>
+
+                            <div class="card-footer mt-5  mb-3 d-flex align-items-center justify-content-end">
+                                <button type="submit" class="btn btn-success fw-bold w-100 mt-3"> Submit Application </button>
+                            </div>
+        
+                        </form>
+
+                    </div>
+    
+                </div>
+    
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ======================== End of Form ============================ -->
+
+
+    <hr class="text-success border-2">
+    <footer class="footer">
+        <div class="d-flex align-items-center justify-content-center">
+            <h5 class="fs-5 text-muted">Kalinga Care Service Ireland</h5>
+        </div>
+        <div class="container d-flex align-items-center justify-content-center">
+            <p class="lead text-muted">Kalinga Care Service 2023 </p>
+        </div>
+    </footer>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="navbar.header.js"></script>
     
+
+    <!-- Country Selector JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://www.jqueryscript.net/demo/country-picker-flags/build/js/countrySelect.js"></script>
+    <script>
+
+        $("#country").countrySelect({
+        });
+
+    </script>
+    
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+    
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+    
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+    
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+    
+    </script>
+    <!-- End of Country Selector JS -->
 </body>
 </html>
